@@ -4,6 +4,7 @@ import Lenis from 'lenis'
 import Hero from "@/components/Home/Hero";
 import HorizontalScroll from "@/components/Home/HorizontalScroll";
 import Text from "@/components/Home/Text";
+import ZoomText from "@/components/Home/ZoomText";
 
 
 const Home = () => {
@@ -23,8 +24,8 @@ const Home = () => {
     return (
         <div>
             <Hero></Hero>
-
             <Text></Text>
+            <ZoomText></ZoomText>
         </div>
     );
 };
