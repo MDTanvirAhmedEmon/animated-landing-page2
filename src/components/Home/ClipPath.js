@@ -11,9 +11,10 @@ const ClipPath = () => {
         target: ref,
         offset: ["start end", "end start"],
     });
-    const path = useTransform(scrollYProgress, [0.2, 0.7], ["15%", "100%"]);
-    const myPath = useMotionTemplate`polygon(0 0, 100% 0, ${path} ${path}, 0% 100%)`
-    console.log(path)
+    const path = useTransform(scrollYProgress, [0.2, 0.7], ["8%", "100%"]);
+    const myPath = useMotionTemplate`polygon(0 0, ${path} 0, ${path} 100%, 0% 100%)`
+
+
     return (
 
 
@@ -28,7 +29,6 @@ const ClipPath = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: "center",
                     height: "100vh",
-                    // clipPath: `polygon(0 0, 100% 0, ${path} ${path}, 0% 100%)`
                     clipPath: myPath,
                 }}>
             </motion.div>

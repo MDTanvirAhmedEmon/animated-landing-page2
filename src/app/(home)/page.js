@@ -28,6 +28,7 @@ const Home = () => {
             <Text></Text>
             <ZoomText></ZoomText>
             <ClipPath></ClipPath>
+            <HorizontalScroll></HorizontalScroll>
         </div>
     );
 };

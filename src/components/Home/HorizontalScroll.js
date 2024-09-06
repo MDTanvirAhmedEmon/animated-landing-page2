@@ -14,7 +14,7 @@ const HorizontalScroll = () => {
 
     return (
         <motion.div ref={ref} className=" h-[300vh] bg-black relative">
-            <motion.div className=" h-[100vh] bg-black sticky top-0">
+            <motion.div className=" h-[100vh] bg-black sticky top-0 overflow-hidden">
 
 
                 <motion.div style={{ x }} className="h-full flex items-center gap-8 p-4 w-auto ">
