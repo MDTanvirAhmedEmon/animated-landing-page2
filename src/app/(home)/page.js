@@ -5,6 +5,7 @@ import Hero from "@/components/Home/Hero";
 import HorizontalScroll from "@/components/Home/HorizontalScroll";
 import Text from "@/components/Home/Text";
 import ZoomText from "@/components/Home/ZoomText";
+import ClipPath from "@/components/Home/ClipPath";
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
             <Hero></Hero>
             <Text></Text>
             <ZoomText></ZoomText>
+            <ClipPath></ClipPath>
         </div>
     );
 };
