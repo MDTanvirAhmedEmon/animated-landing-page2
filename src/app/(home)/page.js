@@ -10,7 +10,7 @@ import ClipPath from "@/components/Home/ClipPath";
 
 const Home = () => {
 
-
+    // lenis for smooth scrolling
     useEffect(() => {
         const lenis = new Lenis()
 
