@@ -11,13 +11,13 @@ const ClipPath = () => {
         target: ref,
         offset: ["start end", "end start"],
     });
-    const path = useTransform(scrollYProgress, [0, 0.5], ["15%", "100%"]);
+    const path = useTransform(scrollYProgress, [0.2, 0.7], ["15%", "100%"]);
     const myPath = useMotionTemplate`polygon(0 0, 100% 0, ${path} ${path}, 0% 100%)`
     console.log(path)
     return (
 
 
-        <motion.div ref={ref} className=" relative h-[200vh]">
+        <motion.div ref={ref} className=" relative h-[250vh]">
             <motion.div
                 className=" sticky top-0"
                 // initial={{ clipPath: "polygon(0 0, 100% 0, 15% 15%, 0% 100%)" }}
