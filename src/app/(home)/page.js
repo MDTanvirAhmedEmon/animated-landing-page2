@@ -7,6 +7,7 @@ import Text from "@/components/Home/Text";
 import ZoomText from "@/components/Home/ZoomText";
 import ClipPath from "@/components/Home/ClipPath";
 import TextAnimation from "@/components/Home/TextAnimation";
+import ZoopTextAnimation from "@/components/Home/ZoopTextAnimation";
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
             <ClipPath></ClipPath>
             <HorizontalScroll></HorizontalScroll>
             <TextAnimation></TextAnimation>
+            <ZoopTextAnimation></ZoopTextAnimation>
         </div>
     );
 };
