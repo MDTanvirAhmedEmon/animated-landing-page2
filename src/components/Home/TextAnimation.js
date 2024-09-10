@@ -19,7 +19,7 @@ const TextAnimation = () => {
         show: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.01,
+                staggerChildren: 0.007,
             },
         },
     };
@@ -54,6 +54,7 @@ const TextAnimation = () => {
                     className=" text-lg">                    {
                         about.split('').map((l, i) => <motion.span variants={childVariants} key={i}>{l}</motion.span>)
                     }</motion.p>
+                    
             </motion.div>
         </div>
     );
