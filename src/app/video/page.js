@@ -61,7 +61,10 @@ const Video = () => {
                     <source src="/bg-video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </motion.video>
-                <h1 className=" text-white text-8xl font-bold text-center sticky top-[40%]">Hello</h1>
+                <div className=" h-[100vh] relative">
+                    <h1 className={` text-white text-8xl font-bold text-center sticky top-[40%]`}>Hello Developers</h1>
+                </div>
+
             </div>
             <div className=" mb-[1000px]">
                 dfgsdfgdfsgdfsgfdsgdfg
