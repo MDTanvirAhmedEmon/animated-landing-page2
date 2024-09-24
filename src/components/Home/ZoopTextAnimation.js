@@ -1,4 +1,6 @@
+import { TransitionLink } from "@/utils/TransitionLink";
 import { motion } from "framer-motion"
+import Link from "next/link";
 
 const ZoopTextAnimation = () => {
 
@@ -96,6 +98,8 @@ const ZoopTextAnimation = () => {
 
                 </motion.div>
             </div>
+            {/* <Link href={`contact`}>Contact</Link> */}
+            <TransitionLink href={`contact`}>Contact</TransitionLink>
         </div>
     );
 };
