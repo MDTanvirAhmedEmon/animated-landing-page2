@@ -57,6 +57,7 @@ const Video = () => {
                     playsInline
                     className="h-[100vh] w-full object-cover sticky top-0  shadow-lg"
                 >
+                    {/* don't import direactly from public folder just give here the file name */}
                     <source src="/bg-video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </motion.video>
