@@ -49,7 +49,7 @@ const Video = () => {
 
     return (
         <div>
-            <div className="h-[300vh] relative" ref={containerRef}>
+            <div className="h-[300vh] relative bg-black" ref={containerRef}>
                 {/* Background video element */}
                 <motion.video
                     ref={videoRef}
@@ -58,11 +58,11 @@ const Video = () => {
                     className="h-[100vh] w-full object-cover sticky top-0  shadow-lg"
                 >
                     {/* don't import direactly from public folder just give here the file name */}
-                    <source src="/bg-video.mp4" type="video/mp4" />
+                    <source src="/bg-city.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </motion.video>
                 <div className=" h-[100vh] relative">
-                    <h1 className={` text-white text-8xl font-bold text-center sticky top-[40%]`}>Hello Developers</h1>
+                    <h1 className={` text-white text-8xl font-bold text-center sticky top-[42%]`}>Hello Developers</h1>
                 </div>
 
             </div>
