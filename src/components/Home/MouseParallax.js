@@ -37,12 +37,20 @@ const MouseParallax = () => {
             className="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden"
         >
             <motion.div
-                style={{
-                    translateX,
-                    translateY,
-                }}
-                className="w-[300px] h-[300px] bg-blue-500 rounded-full shadow-lg"
-            />
+                // style={{
+                //     translateX,
+                //     translateY,
+                // }}
+                className="w-[300px] h-[300px] bg-blue-500 flex items-center justify-center rounded-full shadow-lg"
+
+            >
+                <motion.div
+                    style={{
+                        translateX,
+                        translateY,
+                    }}
+                    className=' h-16 w-16 bg-black rounded-full'></motion.div>
+            </motion.div>
 
             <div className="relative z-10 text-center text-white">
                 <h1 className="text-5xl font-bold">Hero Section</h1>
