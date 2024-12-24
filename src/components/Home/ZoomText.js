@@ -8,7 +8,6 @@ const ZoomText = () => {
     const { scrollYProgress } = useScroll({
         target: ref,
     });
-
     const zoom = useTransform(scrollYProgress, [0, 1], ["0px", "250px"]);
     const beforeText = useTransform(scrollYProgress, [0, 1], ["100px", "130px"]);
     const opsition = useTransform(scrollYProgress, [0, 0.3, 1], ["16px", "16px", "-400px"]);

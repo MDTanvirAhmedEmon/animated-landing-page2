@@ -8,6 +8,7 @@ import ZoomText from "@/components/Home/ZoomText";
 import ClipPath from "@/components/Home/ClipPath";
 import TextAnimation from "@/components/Home/TextAnimation";
 import ZoopTextAnimation from "@/components/Home/ZoopTextAnimation";
+import MouseParallax from "@/components/Home/MouseParallax";
 
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
             <ClipPath></ClipPath>
             <HorizontalScroll></HorizontalScroll>
             <TextAnimation></TextAnimation>
+            <MouseParallax></MouseParallax>
             <ZoopTextAnimation></ZoopTextAnimation>
         </div>
     );
