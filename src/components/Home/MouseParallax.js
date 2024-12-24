@@ -12,7 +12,7 @@ const MouseParallax = () => {
 
     const translateX = useTransform(mouseX, [0, windowSize.width], [-80, 80]);
     const translateY = useTransform(mouseY, [0, windowSize.height], [-80, 80]);
-    console.log(window.innerWidth, window.innerHeight);
+
     // Update window size on resize
     useEffect(() => {
         const updateWindowSize = () => {
