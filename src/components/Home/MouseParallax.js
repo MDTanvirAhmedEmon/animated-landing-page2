@@ -10,8 +10,8 @@ const MouseParallax = () => {
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
 
-    const translateX = useTransform(mouseX, [0, windowSize.width], [-50, 50]);
-    const translateY = useTransform(mouseY, [0, windowSize.height], [-50, 50]);
+    const translateX = useTransform(mouseX, [0, windowSize.width], [-80, 80]);
+    const translateY = useTransform(mouseY, [0, windowSize.height], [-80, 80]);
     console.log(window.innerWidth, window.innerHeight);
     // Update window size on resize
     useEffect(() => {
@@ -32,31 +32,33 @@ const MouseParallax = () => {
     };
 
     return (
-        <div
-            onMouseMove={handleMouseMove}
-            className="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden"
-        >
-            <motion.div
-                // style={{
-                //     translateX,
-                //     translateY,
-                // }}
-                className="w-[300px] h-[300px] bg-blue-500 flex items-center justify-center rounded-full shadow-lg"
-
+        <>
+            <div
+                onMouseMove={handleMouseMove}
+                className="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden"
             >
                 <motion.div
-                    style={{
-                        translateX,
-                        translateY,
-                    }}
-                    className=' h-16 w-16 bg-black rounded-full'></motion.div>
-            </motion.div>
+                    // style={{
+                    //     translateX,
+                    //     translateY,
+                    // }}
+                    className="w-[300px] h-[300px] bg-white flex items-center justify-center rounded-full shadow-lg"
 
-            <div className="relative z-10 text-center text-white">
-                <h1 className="text-5xl font-bold">Hero Section</h1>
-                <p className="mt-4 text-lg">With Framer Motion Mouse Parallax Effect</p>
+                >
+                    <motion.div
+                        style={{
+                            translateX,
+                            translateY,
+                        }}
+                        className=' h-16 w-16 bg-black rounded-full'></motion.div>
+                </motion.div>
+
+                <div className="relative z-10 text-center text-white">
+                    <h1 className="text-5xl font-bold">Hero Section</h1>
+                    <p className="mt-4 text-lg">With Framer Motion Mouse Parallax Effect</p>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
